@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>If Statement For Javascript</title>
+</head>
+
+<body>
+    <p>
+        <h1>Members Log-in System</h1>
+    </p>
+
+    <p>Username: <input type="text" id="username" placeholder="Enter your username"></p>
+
+    <p>Password: <input type="text" id="password" placeholder="Enter your password" </p>
+
+        <p><button id="loginID">Enter</button></p>
+
+        <script type="text/javascript">
+            document.getElementById("loginID").onclick = function() {
+                var usernameEntered = document.getElementById("username").value;
+                var passwordEntered = document.getElementById("password").value;
+                var username = "adewesco";
+                var password = "12345";
+                if (usernameEntered == username && passwordEntered == password) {
+                    alert("Successfully logged in");
+
+                } else {
+                    alert("Incorrect log in details");
+                }
+            }
+        </script>
+</body>
+
+</html>
